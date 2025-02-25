@@ -8,7 +8,7 @@ import dht
 # ==== KONFIGURASI ====
 WIFI_SSID = "Jawara59"         
 WIFI_PASSWORD = "kopisusu"  
-UBIDOTS_TOKEN = "BBUS-b6d507cd1cfc7ae59c2e7371fff45f76db7"  
+UBIDOTS_TOKEN = "BBUS-yKDQxk1xxukS4atdYWiwpSCqK9AqIn"  
 UBIDOTS_DEVICE = "Arunika"    
 UBIDOTS_URL = f"https://industrial.api.ubidots.com/api/v1.6/devices/{UBIDOTS_DEVICE}/"
 
