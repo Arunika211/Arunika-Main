@@ -14,14 +14,14 @@ UBIDOTS_URL = f"https://industrial.api.ubidots.com/api/v1.6/devices/{UBIDOTS_DEV
 
 # GPIO Sensor
 DHT_PIN = 18  # Pin DHT11
-MQ2_PIN = 2  # MQ-2 di pin ADC (Analog), harus GPIO 32-39
+MQ2_PIN = 2  # MQ-2
 TRIG_PIN = 19  # HC-SR04 Trig
 ECHO_PIN = 21  # HC-SR04 Echo
 
 # Inisialisasi Sensor
 dht_sensor = dht.DHT11(Pin(DHT_PIN))
 mq2_sensor = ADC(Pin(MQ2_PIN))
-mq2_sensor.atten(ADC.ATTN_11DB)  # Atur ADC agar bisa membaca hingga 3.3V
+mq2_sensor.atten(ADC.ATTN_11DB)  
 trig = Pin(TRIG_PIN, Pin.OUT)
 echo = Pin(ECHO_PIN, Pin.IN)
 
